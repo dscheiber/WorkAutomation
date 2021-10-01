@@ -1,9 +1,6 @@
 import win32com.client as win32
 import csv
 
-test_csv_raw = '''"C 21 097",6/2/2021 0:00:00,"Revise all active SE Stability Protocols ","reference current Product Specifications","Emerson","Open","MLR",6/30/2021 0:00:00,9/30/2021 0:00:00,,9/30/2021 0:00:00,"LAF","First","daniel scheiber <daniel.scheiber@pacelabs.com>")'''
-test_csv_split = test_csv_raw.split(',')
-
 #this is a row of data used for testing the sendMail function
 testLine = ['C 21 151', '08/24/2021 0:00:00', 'Revise SP/4090/001, SP/5049/001-0004.00 to .01', 'correct # of water determinations required', 'XW Pharma', 'Open', 'MLR', '09/30/2021 0:00:00', '', '', '09/30/2021 0:00:00', 'LAF', 'N/A', 'Samantha McLaughlin <Samantha.McLaughlin@pacelabs.com>']
 
