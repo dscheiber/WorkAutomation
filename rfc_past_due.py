@@ -5,7 +5,7 @@ import csv
 testLine = ['C 21 151', '08/24/2021 0:00:00', 'Revise SP/4090/001, SP/5049/001-0004.00 to .01', 'correct # of water determinations required', 'XW Pharma', 'Open', 'MLR', '09/30/2021 0:00:00', '', '', '09/30/2021 0:00:00', 'LAF', 'N/A', 'Samantha McLaughlin <Samantha.McLaughlin@pacelabs.com>']
 
 ##query file - this is a small test to commit
-queryFile = "S:\\Public\\Quality System Admin\\Support Files\\RFC\\Due End of Month CCs - Emails.txt"
+queryFile = "S:\\Public\\Quality System Admin\\Support Files\\RFC\\Past Due CCs - Emails.txt"
 
 def sendMail(queryline):
     ##stages all the csv line variables
@@ -18,8 +18,8 @@ def sendMail(queryline):
     rfc_email = queryline[13]
 
     ##stages all the email variables
-    subject = 'Change Control Reminder for ' + rfc_number
-    body = 'Hi, \nThis is an automated reminder that the following RFC is coming due: \n' + \
+    subject = 'Past Due Change Control Reminder for ' + rfc_number
+    body = 'Hi, \nThis is an automated reminder that the following RFC is past due: \n' + \
     'RFC#: ' + rfc_number + '\n' + \
     'Task: ' + rfc_task + '\n' + \
     'Description: ' + rfc_reason + '\n' + \
