@@ -17,4 +17,4 @@ opened_count = open_date_filter.shape(0)
 
 
 
-print(date_filter)
+print(opened_count)
